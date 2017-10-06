@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HAUSE</string>
+    <string-array name="modes">
+        <item>Automatic</item>
+        <item>Manual</item>
+        <item>Secure</item>
+    </string-array>
+</resources>

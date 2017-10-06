@@ -1,0 +1,9 @@
+{
+	"data":
+		[{"light_state":"OFF",
+		"fan_state":"OFF",
+		"person_count":0,
+		"mode":"Automatic",
+		"security":"OFF"
+		}]
+}

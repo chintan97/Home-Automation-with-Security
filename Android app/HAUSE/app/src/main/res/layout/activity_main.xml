@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading data..."
+        android:id="@+id/tvJsonItem"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18dp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Security"
+        android:id="@+id/secure_mode"
+        android:layout_marginTop="131dp"
+        android:textOff="OFF"
+        android:textOn="ON"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manual mode"
+        android:id="@+id/mode"
+        android:textOff="Automatic"
+        android:textOn="Manual"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/secure_mode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light"
+        android:layout_marginTop="10dp"
+        android:id="@+id/light_switch"
+        android:layout_below="@+id/mode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fan"
+        android:id="@+id/fan_switch"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/light_switch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Persons in room"
+        android:id="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/fan_switch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/update_person" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update persons"
+        android:id="@+id/change_person_submit"
+        android:layout_alignBottom="@+id/update_person"
+        android:layout_toRightOf="@+id/update_person"
+        android:layout_toEndOf="@+id/update_person" />
+
+</RelativeLayout>
